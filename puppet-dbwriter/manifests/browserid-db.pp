@@ -35,6 +35,10 @@ package {"openssl": ensure => "present" }
 
 package {"openssl-devel": ensure => "present" }
 
+package {"strace": ensure => "present" }
+package {"mlocate": ensure => "present" }
+package {"lsof": ensure => "present" }
+
 # git clone git://github.com/mozilla/browserid.git
 
 exec { "browserid node dependencies installed":
